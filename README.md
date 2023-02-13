@@ -7,7 +7,7 @@ Random modules for spigot plugins
 
 ``` Java
 // Create logger instance
-Logger logger = new logger;
+Logger logger = new logger();
 // Add line to log
 logger.log(filename, line);
 
