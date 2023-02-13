@@ -2,7 +2,9 @@
 random modules for spigot plugins
 
 > class logger
-logs stuff to a file
+
+- logs stuff to a file
+
 ``` Java
 # Create logger instance
 Logger logger = new logger;
