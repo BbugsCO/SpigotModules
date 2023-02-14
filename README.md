@@ -21,3 +21,11 @@ Config dataConfig = new configManager("data");  // Will create (or load if exist
 dataConfig.getCustomConfig().set(path, value); // Add data to config file
 dataConfig.saveCustomConfig(); // Save data to config file
 ```
+
+> ### Class RegionSaver
+- Save and loads areas into a yaml configuration
+``` Java
+RegionSaver regionSaver = new RegionSaver();  // Will create a class instance
+
+regionSaver.save(path, location1, location2)
+```
