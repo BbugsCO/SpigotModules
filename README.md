@@ -4,7 +4,7 @@ Random modules for spigot plugins
 > ### Class Logger
 
 - logs stuff to a file
-- 
+- Format:   MM-dd HH:mm:ss message
 
 ``` Java
 Logger logger = new logger(); // Create logger instance
