@@ -8,13 +8,13 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.File;
 import java.io.IOException;
 
-public class config {
+public class Config {
 
     private File customConfigFile;
     private FileConfiguration customConfig;
     private final String name;
 
-    public config(String name) {
+    public Config(String name) {
         this.name = name;
     }
 
