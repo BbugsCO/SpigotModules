@@ -12,22 +12,23 @@ public class config {
 
     private File customConfigFile;
     private FileConfiguration customConfig;
+    private final String name;
 
-    // Returns customConfiguration
+    public config(String name) {
+        this.name = name;
+    }
+
     public FileConfiguration getCustomConfig() {
         return this.customConfig;
     }
-    
-    
+
     public void createCustomConfig() {
-        // Create file if does not exiest
-        customConfigFile = new File(Bukkit.getServer().getPluginManager().getPlugin("pluginname").getDataFolder(), "data.yml");
+        customConfigFile = new File(Bukkit.getServer().getPluginManager().getPlugin("pluginname").getDataFolder(), name + ".yml");
         if (!customConfigFile.exists()) {
             customConfigFile.getParentFile().mkdirs();
-            Bukkit.getServer().getPluginManager().getPlugin("pluginname").saveResource("data.yml", false);
+            Bukkit.getServer().getPluginManager().getPlugin("pluginname").saveResource(name + ".yml", false);
         }
 
-        // Load file
         customConfig = new YamlConfiguration();
         try {
             customConfig.load(customConfigFile);
