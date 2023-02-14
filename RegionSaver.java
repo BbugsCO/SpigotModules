@@ -16,7 +16,7 @@ public class RegionSaver {
      *
      * @param path save path in yaml configuration
      * @param loc1 Location #1
-     * @param loc2 Location #2    
+     * @param loc2 Location #2
      */
     public boolean save(String path, Location loc1, Location loc2) {
         if (!loc1.getWorld().getName().equals(loc2.getWorld().getName())) { return false; }
@@ -55,14 +55,14 @@ public class RegionSaver {
     /**
      * Loads a region
      *
-     * @param saveLoc location in which to be saved, starting at itself and going towards positive x, y, z
+     * @param saveLocation location in which to be saved, starting at itself and going towards positive x, y, z
      * @param path path to pre-existing yaml save
      */
-    public boolean load(Location saveLoc, String path) {
-        int startX = saveLoc.getBlockX();
-        int startY = saveLoc.getBlockY();
-        int startZ = saveLoc.getBlockZ();
-        World world = saveLoc.getWorld();
+    public boolean load(Location saveLocation, String path) {
+        int startX = saveLocation.getBlockX();
+        int startY = saveLocation.getBlockY();
+        int startZ = saveLocation.getBlockZ();
+        World world = saveLocation.getWorld();
 
         ConfigurationSection blocks = dataConfig.getCustomConfig().getConfigurationSection(path + ".blocks");
 
