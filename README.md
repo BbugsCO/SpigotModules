@@ -101,3 +101,7 @@ utils.isNumeric("2");
 */
 utils.randomNumber(1, 10);
 ```
+> ### Class AttackCooldown
+- Option to add change to 1.8.9 PVP attack speeds
+- Checks key "old_pvp" in plugin default config.yml
+- key "old_pvp" value is boolean (true/false)
