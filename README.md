@@ -10,13 +10,6 @@ Random modules for spigot plugins
 Logger logger = new logger();
 // Add line to log
 logger.log(filename, line);
-
-// You could add it to the main plugin class
-// In main function:
-Logger logger = new logger;
-public void log(String filename, String text) { logger.log(filename, text); }
-// Access through plugin instance in other classes
-plugin.log(filename, text);
 ```
 
 > ### Class Config
@@ -26,20 +19,7 @@ plugin.log(filename, text);
 
 ``` Java
 // Create class instance
-Config configManager = new configManager();
-// Add data to config
-configManager.getCustomConfig().set(path, value);
-// Don't forget to save
-configManager.saveCustomConfig();
-
-// You could add it to the main plugin class
-// In main function:
-Config configManager = new configManager();
-// You should put createCustomConfig() in onEnable() in main class
-public void createCustomConfig() { configManager.createCustomConfig; } 
-public FileConfiguration GetCustomConfig() { return configManager.getCustomConfig(); }
-public void saveCustomConfig() { configManager.saveCustomConfig();  }
-// Example access through plugin instance
-plugin.getCustomConfig().set(path, value);
-plugin.saveCustomConfig();
+Config dataConfig = new configManager("data");  // Will create (or load if exists) a config named data.yml 
+dataConfig.getCustomConfig().set(path, value); // Add data to config file
+dataConfig.saveCustomConfig(); // Save data to config file
 ```
