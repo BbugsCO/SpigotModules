@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class logger {
+public class Logger {
     public static void log(String filename, String message) {
         try {
             // Get Folder
