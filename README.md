@@ -89,6 +89,7 @@ utils.isNumeric("2");
 // returns true
 ```
 #### function randomNumber()
+- Includes min, max, and anything inbetween
 ```Java
 /**
 * Generates random number
