@@ -14,7 +14,7 @@ public class RegionSaver {
     /**
      * Saves a region to yaml file
      *
-     * @param path path in yaml configuration
+     * @param path save path in yaml configuration
      * @param loc1 Location #1
      * @param loc2 Location #2    
      */
