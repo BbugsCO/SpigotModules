@@ -11,6 +11,13 @@ import java.util.List;
 public class RegionSaver {
     Config dataConfig = new Config("data");
 
+    /**
+     * Saves a region to yaml file
+     *
+     * @param path path in yaml configuration
+     * @param loc1 Location #1
+     * @param loc2 Location #2    
+     */
     public boolean save(String path, Location loc1, Location loc2) {
         if (!loc1.getWorld().getName().equals(loc2.getWorld().getName())) { return false; }
         World world = loc1.getWorld();
@@ -44,7 +51,13 @@ public class RegionSaver {
         }
         return true;
     }
-    // Will load starting at saveLoc and will go towards positive x, y, z
+
+    /**
+     * Loads a region
+     *
+     * @param saveLoc location in which to be saved, starting at itself and going towards positive x, y, z
+     * @param path path to pre-existing yaml save
+     */
     public boolean load(Location saveLoc, String path) {
         int startX = saveLoc.getBlockX();
         int startY = saveLoc.getBlockY();
