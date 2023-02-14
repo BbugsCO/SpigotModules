@@ -53,7 +53,7 @@ public class RegionSaver {
     }
 
     /**
-     * Loads a region
+     * Loads a region from yaml file
      *
      * @param saveLocation location in which to be saved, starting at itself and going towards positive x, y, z
      * @param path path to pre-existing yaml save
