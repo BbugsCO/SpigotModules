@@ -30,13 +30,13 @@ public class RegionSaver {
         int maxZ = Math.max(loc1.getBlockZ(), loc2.getBlockZ());
 
         /*
-        Save each coordinate formatted as:   x-y-z-world
+        Save each coordinate formatted as:   x-y-z
         min x, min y, min z = (0, 0, 0)
 
         Saved to config as:
          path:
            blocks:
-             x-y-z-world: stone
+             x-y-z: stone
 
          */
 
