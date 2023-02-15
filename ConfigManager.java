@@ -8,7 +8,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.File;
 import java.io.IOException;
 
-public class Config {
+public class ConfigManager {
 
     private File customConfigFile;
     private FileConfiguration customConfig;
