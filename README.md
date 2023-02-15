@@ -11,13 +11,13 @@ Logger logger = new logger(); // Create logger instance
 logger.log(filename, line); // Add line to log
 ```
 
-> ### Class Config
+> ### Class ConfigManager
 
 - Creates a seperate config file
 - Good for storing data like player stats or other random stuff
 
 ``` Java
-Config dataConfig = new configManager("data"); // Create class instance 
+ConfigManager dataConfig = new ConfigManager("data"); // Create class instance 
 dataConfig.createCustomConfig(); // Will create (or load if exists) a config named data.yml 
 dataConfig.getCustomConfig().set(path, value); // Add data to config file
 dataConfig.saveCustomConfig(); // Save data to config file
