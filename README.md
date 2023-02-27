@@ -7,7 +7,6 @@ Random modules I use for spigot plugins
 - Format:   MM-dd HH:mm:ss message
 
 ``` Java
-Logger logger = new logger(); // Create logger instance
 logger.log(filename, line); // Add line to log
 ```
 
@@ -26,7 +25,6 @@ dataConfig.saveCustomConfig(); // Save data to config file
 > ### Class RegionSaver
 - Save and loads areas into a yaml configuration
 ``` Java
-RegionSaver regionSaver = new RegionSaver();  // Will create a class instance
 /*
 * Saves a region to yaml file
 *
@@ -46,10 +44,6 @@ regionSaver.load(loadLocation, path)
 
 > ### Class Utils
 - Random utility functions that I use
-#### Create Instance
-```Java
-Utils utils = new Utils();
-```
 #### function stringToLocation()
 - Good for saving locations as text
 ```Java
